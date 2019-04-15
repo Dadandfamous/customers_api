@@ -9,4 +9,3 @@ app
   .use(bodyParser.json())
   .use(customersRouter)
   .listen(port, () => console.log(`Listening on port ${port}`))
-
