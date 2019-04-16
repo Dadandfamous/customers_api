@@ -9,4 +9,4 @@ sequelize.sync()
   })
   .catch(console.error)
 
-module.exports = sequelize
+module.exports = sequelize 
