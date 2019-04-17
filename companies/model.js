@@ -22,4 +22,6 @@ const Company = sequelize.define('companies', {
   tableName: 'companies'
 })
 
+Company.belongsTo(Customer)
+
 module.exports = Company
