@@ -1,5 +1,5 @@
 const { Router } = require('express')
-const Login = require('./jwt')
+const toJWT = require('./jwt')
 
 const router = new Router()
 
@@ -20,7 +20,6 @@ router.post('/logins', (req, res, next) => {
       jwt: toJWT({ userId: 1 })
     })
   }
-
 })
 
 module.exports = router
