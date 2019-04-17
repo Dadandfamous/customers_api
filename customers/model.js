@@ -30,7 +30,7 @@ const Customer = sequelize.define('customers', {
     allowNull: false,
   },
   companyId: {
-    type: Sequelize.STRING,
+    type: Sequelize.INTEGER,
     field: 'company_id'
   }
 }, {
