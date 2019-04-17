@@ -15,11 +15,9 @@ router.post('/logins', (req, res, next) => {
       message: 'Please supply a valid email and password'
     })
   }
-  if (email || password) {
     res.send({
       jwt: toJWT({ userId: 1 })
     })
-  }
 })
 
 router.get('/secret-endpoint', (req, res) => {
